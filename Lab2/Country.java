@@ -38,5 +38,5 @@ public class Country {
             return location.findVenueById(venueId);
         }
         return null; // Retorna null si no se encuentra la ubicación o el recinto
-    }1
+    }
 }
