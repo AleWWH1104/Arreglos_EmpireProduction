@@ -3,24 +3,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Country {
-    private int id;
-    private String name;
+    private int idPais;
+    private String nombre;
     private List<Location> locations;
 
-    public Country(int id, String name) {
-        this.id = id;
-        this.name = name;
+    public Country(int idPais, String nombre) {
+        this.idPais = idPais;
+        this.nombre = nombre;
         this.locations = new ArrayList<>();
     }
 
-    // Métodos para agregar y obtener ubicaciones
-    public void addLocation(Location location) {
-        locations.add(location);
+    public int getIdPais() {
+        return idPais;
     }
 
-    public List<Location> getLocations() {
-        return locations;
+    public String getNombre() {
+        return nombre;
     }
+
+    // // Métodos para agregar y obtener ubicaciones
+    // public void addLocation(Location location) {
+    //     locations.add(location);
+    // }
+
+    // public List<Location> getLocations() {
+    //     return locations;
+    // }
 
     // // Métodos para buscar ubicaciones y recintos por ID
     // public Location findLocationById(int locationId) {

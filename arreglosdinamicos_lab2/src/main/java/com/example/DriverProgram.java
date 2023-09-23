@@ -15,7 +15,7 @@ public class DriverProgram {
     /*** Constructor DriverProgram que inicializa y maneja el flujo del programa.*/
     public DriverProgram(){
         leerCSV(archivoCSVRecinto);
-        leerCSV(archivoCSVEvento);
+        //leerCSV(archivoCSVEvento);
         
     }
 
@@ -23,12 +23,21 @@ public class DriverProgram {
     try {
         // Leer datos desde el archivo CSV
         List<String[]> data = fileManager.readCSV(archivoCSV);
+        System.out.println("datos de csv leidos correctamente");
+        // // Imprimir los datos
+        // for (String[] row : data) {
+        //     for (String column : row) {
+        //         System.out.print(column + " | ");
+        //     }
+        //     System.out.println();
+        // }
 
-        // Imprimir los datos
-        for (String[] row : data) {
-            for (String column : row) {
-                System.out.print(column + " | ");
-            }
+        // Cargar paises y recintos desde el archivo de recintos
+        paises = fileManager.PaisesDesdeCSV(archivoCSVRecinto);
+        // Imprimir los datos de los países
+        for (Country pais : paises) {
+            System.out.println("ID Pais: " + pais.getIdPais());
+            System.out.println("Ubicación: " + pais.getNombre());
             System.out.println();
         }
     } catch (IOException e) {
