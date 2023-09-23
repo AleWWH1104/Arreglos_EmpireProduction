@@ -12,7 +12,7 @@ public class EventAssignment {
     }
 
     // Métodos para asignar eventos a recintos
-    public void assignEvent(Event event, Venue venue) {
+    public void assignEvent(Event event, Recinto venue) {
         
         
     }

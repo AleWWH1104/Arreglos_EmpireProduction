@@ -1,27 +1,22 @@
 package com.example;
-import java.util.Date;
 
 public class Event {
     private int id;
-    private String artist;
-    private int countryId;
-    private int locationId;
-    private int venueId;
-    private int hour;
-    private Date date;
-    private int duration;
-    private int attendees;
+    private int idPais;
+    private String artista;
+    private int horario;
+    private String fecha;
+    private int duracion;
+    private int cantidadAsistentes;
 
-    public Event(int id, String artist, int countryId, int locationId, int venueId, int hour, Date date, int duration, int attendees) {
+    public Event(int id, int idPais, String artista, int horario, String fecha, int duracion, int cantidadAsistentes) {
         this.id = id;
-        this.artist = artist;
-        this.countryId = countryId;
-        this.locationId = locationId;
-        this.venueId = venueId;
-        this.hour = hour;
-        this.date = date;
-        this.duration = duration;
-        this.attendees = attendees;
+        this.idPais = idPais;
+        this.artista = artista;
+        this.horario = horario;
+        this.fecha = fecha;
+        this.duracion = duracion;
+        this.cantidadAsistentes = cantidadAsistentes;
     }
 
  

@@ -5,7 +5,7 @@ import java.util.List;
 public class Location {
     private int id;
     private String name;
-    private List<Venue> venues;
+    private List<Recinto> venues;
 
     public Location(int id, String name) {
         this.id = id;
@@ -14,11 +14,11 @@ public class Location {
     }
 
     // Métodos para agregar y obtener recintos
-    public void addVenue(Venue venue) {
+    public void addVenue(Recinto venue) {
         venues.add(venue);
     }
 
-    public List<Venue> getVenues() {
+    public List<Recinto> getVenues() {
         return venues;
     }
 
