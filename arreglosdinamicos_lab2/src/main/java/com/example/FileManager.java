@@ -14,6 +14,7 @@ import com.opencsv.exceptions.CsvException;
  */
 public class FileManager {
 
+    //Funcion para leer
     public List<String[]> readCSV(String archivo) throws IOException, CsvException {
         FileReader fileReader = new FileReader(archivo);
         CSVParserBuilder parserBuilder = new CSVParserBuilder();
@@ -28,4 +29,5 @@ public class FileManager {
 
         return data;
     }
+    
 }
